@@ -6,9 +6,16 @@
     <meta http-equiv="'X-UA-Compatible" content="ie=edge">
     <title>PRE-BC-B</title>
     <style>
-      body {
+        .slide-top{animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both}
+        }
+    </style>
+    <style>
+      .cl-button {
         width: 100vw;
         height: 100vh;
+        position: absolute;
+        left: 300px;
+        top: 150px;
         background: linear-gradient(
           135deg,
           hsl(170deg, 80%, 70%),
@@ -31,14 +38,37 @@
     </style>
     <style>
         #myHeader {
+            width:1100px;
+            height:100px;
             border: 10px;
             border-color: white;
             border-radius: 20px;
             background-color: rgb(0,100,255);
             color: rgb(255, 255, 255);
-            padding: 40px;
             text-align: center;
         }
+    </style>
+    <style>
+        #line {
+            width:10px;
+            height:700px;
+            border: 10px;
+            border-color: white;
+            background-color: rgb(0,0,0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 5px;
+    </style>
+    <style>
+        #line2 {
+            width:270px;
+            height:10px;
+            border: 10px;
+            border-color: white;
+            background-color: rgb(0,0,0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 5px;
     </style>
     <style>
         ul {
@@ -60,20 +90,20 @@
     </style>
     <style>
         #yellowceircle2 {
-            width: 400px;
-            height: 100px;
+            width: 200px;
+            height: 50px;
             background-color: rgb(0,150,255);
-            font-size: 40px;
+            font-size: 20px;
             color: white;
             border: 10px;
             border-color: white;
-            border-radius: 60px 0px 0px 60px;
+            border-radius: 5px;
         }
     </style>
     <style>
         #yellowcircle3 {
-            width: 1423px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
             border: 10px;
             border-color: white;
             border-radius: 20px;
@@ -109,50 +139,134 @@
     </style>
     <style>
         #yellowceircle5 {
-            width: 400px;
-            height: 100px;
+            width: 1100px;
+            height: 500px;
             background-color: rgb(0,150,255);
             font-size: 40px;
             color: white;
             border: 10px;
             border-color: white;
-            border-radius: 0px 60px 60px 0px;
+            border-radius: 60px 60px 60px 60px;
         }
     </style>
     <style>
         .mar1{
-            margin-left: -40px;
-            margin-bottom:10px;
-            margin-top: 60px;
+            position: absolute;
+            left: 30px;
+            top: 450px;
         }
+
     </style>
     <style>
         .mar2{
-            margin-left: 28px;
-            margin-bottom:50px;
+            position: absolute;
+            left: 15px;
+            top: 650px;
         }
     </style>
     <style>
         .mar3{
-            margin-left: 120px;
-            margin-top: 70px;
+            position: absolute;
+            left: 30px;
+            top: 250px;
         }
     </style>
     <style>
         .mar4{
-            margin-left: 140px;
-            margin-top: 10px;
+            position: absolute;
+            left: 10px;
+            top: 280px;
         }
+    </style>
+    <style>
+        .mar4-1{
+            position: absolute;
+            left: 10px;
+            top: 310px;
+        }
+    </style>
+    <style>
+        .mar4-2{
+            position: absolute;
+            left: 10px;
+            top: 340px;
+        }
+    </style>
     <style>
         .mar5{
-            margin-left: 600px;
-            margin-top: 10px;
+            position: absolute;
+            left: 915px;
+            top: 200px;
         }
     </style>
     <style>
         .mar6{
-            margin-left: 1050px;
-            margin-top: -60px;
+            position: absolute;
+            left: 400px;
+            top: 180px;
+        }
+    </style>
+    <style>
+        .mar6-1{
+            position: absolute;
+            left: 400px;
+            top: 240px;
+        }
+    </style>
+    <style>
+        .mar6-2{
+            position: absolute;
+            left: 400px;
+            top: 300px;
+        }
+    </style>
+    <style>
+        .mar6-3{
+            position: absolute;
+            left: 400px;
+            top: 360px;
+        }
+    </style>
+    <style>
+        .mar6-4{
+            position: absolute;
+            left: 400px;
+            top: 420px;
+        }
+    </style>
+    <style>
+        .mar6-5{
+            position: absolute;
+            left: 400px;
+            top: 480px;
+        }
+    </style>
+    <style>
+        .mar6-6{
+            position: absolute;
+            left: 400px;
+            top: 540px;
+        }
+    </style>
+    <style>
+        .mar7{
+            position: absolute;
+            left: 300px;
+            top: 10px;
+        }
+    </style>
+    <style>
+        .mar8{
+            position: absolute;
+            left: 270px;
+            top: 10px;
+        }
+    </style>
+    <style>
+        .mar9{
+            position: absolute;
+            left: 5px;
+            top: 200px;
         }
     </style>
     <style>
@@ -165,16 +279,30 @@
             color: white;
         }
     </style>
+    <style>
+        #box{
+            width: 400px;
+            height: 100px;
+
+    </style>
 </head>
 <body>
+<h1 id="myHeader" class="mar7"> PRE-BC-B</h1>
+    <button id="yellowceircle2" class="mar3">关于本网页</button><button id="yellowceircle5" class="cl-button"></button>
+    <h1 id="line" class="mar8"></h1>
+    <h1 id="line2" class="mar9"></h1>
+    <h2 class="mar4" id="col1"> -----欢迎浏览-----</h2>
+    <h2 class="mar4-1" id="col1"> --PRE-BC-B 网页--</h2>
+    <h2 class="mar4-2" id="col1"> 点击笔记查看所有笔记</h2>
 
-<h1 id="myHeader"> PRE-BC-B</h1>
-    <button id="yellowceircle2" class="mar3">关于本网页</button><button id="yellowceircle4" >a</button><button id="yellowceircle5" class="mar5">通知</button>
+    <h1 class="mar6" id="col1"> 周一拍照</h1>
+    <h1 class="mar6-1" id="col1"> 语文古寺作业</h1>
+    <h1 class="mar6-2" id="col1"> ---无---</h1>
+    <h1 class="mar6-3" id="col1"> ---无---</h1>
+    <h1 class="mar6-4" id="col1"> ---无---</h1>
+    <h1 class="mar6-5" id="col1"> ---无---</h1>
+    <h1 class="mar6-6" id="col1"> ---无---</h1>
 
-
-    <h1 class="mar4" id="col1"> -----欢迎浏览-----</h1><h1 class="mar6" id="col1"> 周一拍照</h1>
-    <h1 class="mar4" id="col1"> --PRE-BC-B 网页--</h1><h1 class="mar6" id="col1"> ---无---</h1>
-    <h1 class="mar4" id="col1"> 点击笔记查看所以笔记</h1><h1 class="mar6" id="col1"> ---无---</h1>
 
 
 
